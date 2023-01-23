@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BMIDataSet" targetNamespace="http://tempuri.org/BMIDataSet.xsd" xmlns:mstns="http://tempuri.org/BMIDataSet.xsd" xmlns="http://tempuri.org/BMIDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BMIConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BMIConnectionString (Settings)" PropertyReference="ApplicationSettings.AplikacjaBMI_RJ.Properties.Settings.GlobalReference.Default.BMIConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BMI-WiekTableAdapter" GeneratorDataComponentClassName="BMI_WiekTableAdapter" Name="BMI-Wiek" UserDataComponentName="BMI-WiekTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BMIConnectionString (Settings)" DbObjectName="BMI-Wiek" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Wiek, BMI FROM [BMI-Wiek]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Wiek" DataSetColumn="Wiek" />
+              <Mapping SourceColumn="BMI" DataSetColumn="BMI" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BMI-WynikiTableAdapter" GeneratorDataComponentClassName="BMI_WynikiTableAdapter" Name="BMI-Wyniki" UserDataComponentName="BMI-WynikiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BMIConnectionString (Settings)" DbObjectName="BMI-Wyniki" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Znaczenie, BMI FROM [BMI-Wyniki]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Znaczenie" DataSetColumn="Znaczenie" />
+              <Mapping SourceColumn="BMI" DataSetColumn="BMI" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BMIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="BMIDataSet" msprop:Generator_DataSetName="BMIDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BMI-Wiek" msprop:Generator_RowEvHandlerName="_BMI_WiekRowChangeEventHandler" msprop:Generator_RowDeletedName="_BMI_WiekRowDeleted" msprop:Generator_RowDeletingName="_BMI_WiekRowDeleting" msprop:Generator_RowEvArgName="_BMI_WiekRowChangeEvent" msprop:Generator_TablePropName="_BMI_Wiek" msprop:Generator_RowChangedName="_BMI_WiekRowChanged" msprop:Generator_RowChangingName="_BMI_WiekRowChanging" msprop:Generator_TableClassName="_BMI_WiekDataTable" msprop:Generator_RowClassName="_BMI_WiekRow" msprop:Generator_TableVarName="_tableBMI_Wiek" msprop:Generator_UserTableName="BMI-Wiek">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Wiek" msprop:Generator_ColumnPropNameInRow="Wiek" msprop:Generator_ColumnPropNameInTable="WiekColumn" msprop:Generator_ColumnVarNameInTable="columnWiek" msprop:Generator_UserColumnName="Wiek" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BMI" msprop:Generator_ColumnPropNameInRow="BMI" msprop:Generator_ColumnPropNameInTable="BMIColumn" msprop:Generator_ColumnVarNameInTable="columnBMI" msprop:Generator_UserColumnName="BMI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BMI-Wyniki" msprop:Generator_RowEvHandlerName="_BMI_WynikiRowChangeEventHandler" msprop:Generator_RowDeletedName="_BMI_WynikiRowDeleted" msprop:Generator_RowDeletingName="_BMI_WynikiRowDeleting" msprop:Generator_RowEvArgName="_BMI_WynikiRowChangeEvent" msprop:Generator_TablePropName="_BMI_Wyniki" msprop:Generator_RowChangedName="_BMI_WynikiRowChanged" msprop:Generator_RowChangingName="_BMI_WynikiRowChanging" msprop:Generator_TableClassName="_BMI_WynikiDataTable" msprop:Generator_RowClassName="_BMI_WynikiRow" msprop:Generator_TableVarName="_tableBMI_Wyniki" msprop:Generator_UserTableName="BMI-Wyniki">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Znaczenie" msprop:Generator_ColumnPropNameInRow="Znaczenie" msprop:Generator_ColumnPropNameInTable="ZnaczenieColumn" msprop:Generator_ColumnVarNameInTable="columnZnaczenie" msprop:Generator_UserColumnName="Znaczenie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BMI" msprop:Generator_ColumnPropNameInRow="BMI" msprop:Generator_ColumnPropNameInTable="BMIColumn" msprop:Generator_ColumnVarNameInTable="columnBMI" msprop:Generator_UserColumnName="BMI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
