@@ -22,6 +22,7 @@ Aplikacja okienkowa napisana w C#, która oblicza wartość indeksu masy ciała 
 
 *Możliwość zakończenia działania aplikacji.
 
+*Zmiana kolorów, dopasowane dla osób starszych oraz z daltonizmem (deuteranomalia).
 
 Instalacja:
 
