@@ -1,14 +1,14 @@
 # AplikacjaBMI
 
-Aplikacja BMI:
+## Aplikacja BMI[<img src="map-pin.png" width="40" height="40">](#project-status)
 
 Aplikacja okienkowa napisana w C#, która oblicza wartość indeksu masy ciała (BMI) na podstawie podanej wagi i wzrostu użytkownika.
 
  
 
-<!-- markdownlint-disable -->
-## Funkcjonalności:[![](./docs/img/pin.svg)](#project-status)
-<table class="no-border">
+
+## Funkcjonalności[<img src="map-pin.png" width="40" height="40">](#project-status)
+
 
 *Obliczanie BMI na podstawie podanej wagi i wzrostu użytkownika.
 
@@ -24,14 +24,14 @@ Aplikacja okienkowa napisana w C#, która oblicza wartość indeksu masy ciała 
 
 *Zmiana kolorów, dopasowane dla osób starszych oraz z daltonizmem (deuteranomalia).
 
-Instalacja:
+## Instalacja[<img src="map-pin.png" width="40" height="40">](#project-status)
 
 Aby skorzystać z aplikacji należy pobrać kod źródłowy i skompilować go za pomocą Visual Studio.
 
-Użycie:
+## Użycie[<img src="map-pin.png" width="40" height="40">](#project-status)
 
 Po uruchomieniu aplikacji, należy wprowadzić wagę i wzrost użytkownika, następnie kliknąć przycisk "Oblicz BMI" aby otrzymać wynik.
 
-Uwagi:
+## Uwagi[<img src="map-pin.png" width="40" height="40">](#project-status)
 
 Aplikacja wymaga użycia ',' jako separatora dziesiętnego. W przypadku podania nieprawidłowych danych, pojawi się komunikat o błędzie i będzie trzeba kliknąć przycisk "Reset" aby wprowadzić dane ponownie.
