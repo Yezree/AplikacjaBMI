@@ -53,8 +53,8 @@ namespace AplikacjaBMI_RJ
             BMILabel.BackColor = Color.White;
             try
             {
-                h = Double.(wzrost.Text);
-                w = Double.(waga.Text);
+                h = Double.Parse(wzrost.Text);
+                w = Double.Parse(waga.Text);
             }
             catch (FormatException ex)
             {
