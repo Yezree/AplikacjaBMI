@@ -65,62 +65,78 @@ namespace AplikacjaBMI_RJ
             t = w / (h * h);
             BMILabel.Text = String.Format("{0:f}", t);
 
-            if (t <= 23.9)
+              if (t <= 15.99)
             {
                 BMILabel.BackColor = Color.PowderBlue;
             }
-            else if (t <= 27.9)
+            else if (t <= 18.5)
             {
                 BMILabel.BackColor = Color.Blue;
             }
-            else if (t <= 32.9)
+            else if (t <= 24.49)
             {
                 BMILabel.BackColor = Color.Yellow;
             }
-            else if (t <= 37.9)
+            else if (t <= 29.99)
             {
                 BMILabel.BackColor = Color.Red;
             }
-            else if (t <= 40.9)
+            else if (t <= 34.99)
             {
                 BMILabel.BackColor = Color.DarkRed;
             }
-            else if (t >= 40.9)
+            else if (t >= 40.99)
+            {
+                BMILabel.BackColor = Color.DarkRed;
+            }
+            else if (t >= 44.99)
+            {
+                BMILabel.BackColor = Color.DarkRed;
+            }
+            else if (t >= 45.0)
             {
                 BMILabel.BackColor = Color.DarkRed;
             }
 
-            if (t < 16.0)
+            if (t < 15.99)
             {
-                label4.Text = "wyglodzenie";
+               MessageBox.Show("Ekstremalna niedowaga oznacza, że BMI jest poniżej 16. Osoby z ekstremalną niedowagą mają znacznie zbyt mało masy ciała w stosunku do swojego wzrostu i mogą być bardzo słabe i osłabione. Mogą mieć trudności z utrzymaniem temperatury ciała, a ich odporność jest bardzo słaba. Mogą cierpieć na anemia, trudności z trawieniem, a także problemy hormonalne. Ekstremalna niedowaga jest poważnym problemem zdrowotnym, który wymaga natychmiastowej pomocy medycznej.");
+                return;
             }
-            else if (t <= 16.9)
+            else if (t <= 18.5)
             {
-                label4.Text = "wychudzenie";
+                MessageBox.Show("Niedowaga: BMI poniżej 18,5 oznacza, że dana osoba ma zbyt mało masy ciała w stosunku do swojego wzrostu. Osoby z niedowagą mogą mieć trudności z utrzymaniem temperatury ciała, mieć słabszą odporność, mniejszą wytrzymałość i większe ryzyko chorób.");
+                return;
             }
-            else if (t <= 18.49)
+            else if (t <= 24.49)
             {
-                label4.Text = "niedowaga";
+                MessageBox.Show("Norma wagowa: BMI od 18,5 do 24,9 oznacza, że dana osoba ma prawidłową masę ciała w stosunku do swojego wzrostu. Osoby z normą wagową mają najniższe ryzyko zdrowotne związane z masą ciała.");
+                return;
             }
-            else if (t <= 24.99)
+            else if (t <= 29.99)
             {
-                label4.Text = "waga prawidłowa";
-            }
-            else if (t <= 29.9)
-            {
-                label4.Text = "nadwaga";
+                 MessageBox.Show("Nadwaga: BMI od 25 do 29,9 oznacza, że dana osoba ma nadmierną masę ciała w stosunku do swojego wzrostu. Osoby z nadwagą mogą mieć większe ryzyko chorób serca, cukrzycy i innych schorzeń związanych z masą ciała.");
+                return;
             }
             else if (t <= 34.99)
             {
-                label4.Text = "I stopien otylosci";
+                 MessageBox.Show("I stopień otyłości: BMI od 30 do 34,9 oznacza, że dana osoba jest otyła i ma zwiększone ryzyko chorób serca, cukrzycy i innych schorzeń związanych z masą ciała.");
+                return;
             }
-            else if (t <= 39.99)
+            else if (t <= 40.99)
             {
-                label4.Text = "II stopien otylosci";
+                 MessageBox.Show("II stopień otyłości: BMI od 35 do 39,9 oznacza, że dana osoba jest ciężko otyła i ma zwiększone ryzyko chorób serca, cukrzycy, udaru mózgu i innych schorzeń związanych z masą ciała.");
+                return;
             }
-            else if (t >= 40.0)
+            else if (t <= 44.99)
             {
-                label4.Text = "Otylosc skrajna";
+                 MessageBox.Show("III stopień otyłości (otyłość skrajna): BMI powyżej 40 oznacza, że dana osoba jest bardzo ciężko otyła i ma bardzo wysokie ryzyko chorób serca, cukrzycy, udaru mózgu i innych schorzeń związanych z masą ciała.");
+                return;
+            }
+            else if (t >= 45.0)
+            {
+                MessageBox.Show("Otyłość typu androidalnego (otyłość brzucha): Jest to rodzaj otyłości, w którym tłuszcz gromadzi się głównie w okolicach brzucha.");
+                return;
             }
 
         }
